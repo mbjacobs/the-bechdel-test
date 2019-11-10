@@ -11,11 +11,11 @@ body {
 }
 
 .movies_background {
-	background-image: url("img/backgrounds/background-movies.jpg");
+	background-image: url("../img/backgrounds/background-movies.jpg");
 }
 
 .books_background {
-	background-image: url("img/backgrounds/background-books.jpg");
+	background-image: url("../img/backgrounds/background-books.jpg");
 }
 
 header {

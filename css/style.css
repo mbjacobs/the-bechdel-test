@@ -9,7 +9,6 @@ html{
 
 body{
   font-family: 'Palanquin Dark', sans-serif; 
-  background-color: dimgrey;
   font-size: 1.0em;
   margin: 0;
   padding: 0;
@@ -20,30 +19,41 @@ body, html {
 }
 
 .parallax {
-  /* Full height */
   height: 100%;
 
-  /* Create the parallax scrolling effect */
+  /*Parallax scrolling effect*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/*Source: https://www.desktop-background.com/p/2015/03/22/920932_film-backgrounds-
+free-stock-photo-public-domain-pictures_1920x1272_h.jpg */
 .home_background {
-  background-image: url("../img/backgrounds/background-home.jpg");
+  background-image: url("../img/backgrounds/background-home-2.jpg");
+  background-color: grey;
+
 }
 
+/*Source: https://perkinsmediagroup.com/wp-content/uploads/2018/05/Perkins-Media-
+Home-Page-Hero-Image.jpg*/
 .movies_background {
   background-image: url("../img/backgrounds/background-movies.jpg");
+  background-color: dimgrey;
 }
 
+/*Source:  https://pixabay.com/photos/library-education-wisdom-3115371/*/
 .books_background {
   background-image: url("../img/backgrounds/background-books.jpg");
+  background-color: dimgrey;
 }
 
+/*Source: https://wallpapercave.com/wp/wp2714528.jpg*/
 .resources_background {
   background-image: url("../img/backgrounds/background-resources.jpg");
+  background-color: dimgrey;
+
 }
  
 h1 {
@@ -53,15 +63,12 @@ h1 {
   padding-bottom: 5px;
   font-size: 1.75em;
   text-align: center;
+  color: white;
 }
 
-#site_name a {
+h1 a {
   color: white;
   text-decoration: none;
-}
-
-#site_name a:hover {
-  color: #D49D9D;
 }
 
 h2{
@@ -76,10 +83,7 @@ nav{
   list-style: none;
   text-align: center;
   background-color: rgba(129, 50, 50, 0.4);
-}
-
-.selected a {
-  color: white !important;
+  font-size: 1.25em;
 }
 
 nav ul{
@@ -102,14 +106,14 @@ nav a{
 }
 
 nav a:hover{
-  color: rgba(83, 26, 26, 1);
-}
-
-nav.light_text a {
   color: #D49D9D;
 }
 
-h2.light_text {
+.selected a {
+  color: white;
+}
+
+.light_text {
   color: white;
 }
 
@@ -129,11 +133,6 @@ h2.light_text {
   top: 0;
 }
 
-/*:focus{
-  border: 2px solid black;
-  outline: none;
-}*/
-
 header {
   padding-top: 10px;
 }
@@ -144,69 +143,6 @@ header p{
   line-height: 1.5;
   padding: 30px 50px 50px 30px;
   text-align: center;
-}
-
-#criteria {
-  line-height: 1.25;
-  padding-left: 12%;
-  padding-right: 10%;
-}
-
-#criteria ol {
-  font-size: 1.25em;
-  color: white;
-  text-align: left;
-  padding-top: 30px;
-}
-
-#criteria p {
-  padding-top: 30px;
-  text-align: center;
-  color: rgba(83, 26, 26, 1);
-  font-weight: bolder;
-  font-size: 1.25em;
-}
-
-/*Resources page film strip*/
-.film_strip_container {
-  padding-top: 10px;
-  display: grid;
-  grid-column: 1 / -1;
-  grid-row: 1 / 5;
-  grid-template-rows: auto auto auto auto; 
-  width: 95vw; 
-  margin: 0 auto;
-  padding-bottom: 50px;
-}
-
-.box {
-  background: black;
-  opacity: 0.8;
-  border: 5px white solid;
-  color: white;
-  padding: 40px;
-}
-
-.box ul {
-  padding-left: 20px;
-  line-height: 1.5;
-}
-
-.box h3 {
-  color: maroon;
-}
-
-.box li a:link {
-  text-decoration: none;
-   color: #D49D9D;
-}
-
-.box li a:visited {
-  color: grey;
-}
-
-.box li a:hover {
-  text-decoration: underline;
 }
 
 footer{
@@ -221,31 +157,100 @@ footer{
   width: 100vw;
 }
 
-/*Media queries*/
+.container {
+  height: 90%;
+}
 
-/*@media screen{
-  img {
-    display: none
-  }
-}*/
+/*Landing page*/
+#criteria_text {
+  line-height: 1.25;
+  padding-left: 12%;
+  padding-right: 10%;
+}
+
+#criteria_text ol {
+  font-size: 1.25em;
+  color: white;
+  text-align: left;
+  padding-top: 30px;
+}
+
+#criteria_text p {
+  padding-top: 30px;
+  text-align: center;
+  color: #D49D9D;;
+  font-weight: bolder;
+}
+
+#criteria_comic {
+  display: none;
+}
+
+/*Resources page*/
+.film_strip_container {
+  padding-top: 10px;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1 / 5;
+  grid-template-rows: auto auto auto auto; 
+  width: 95vw; 
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.box {
+  background: black;
+  opacity: 0.9;
+  border: 5px white solid;
+  color: white;
+  padding: 40px;
+}
+
+.box ul {
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+.box h3 {
+  color: white;
+  padding-bottom: 10%;
+}
+
+.box li a:link {
+  text-decoration: none;
+   color: #D49D9D;
+}
+
+.box li a:visited {
+  color: lightgrey;
+}
+
+.box li a:hover {
+  text-decoration: underline;
+}
 
 /*Reponsive Design*/
+
 /*Tablet*/
 @media only screen and (min-width:600px) and (max-width:767px) { 
 
-body{
-  background: red;
- }
-
    nav ul{
-  grid-column: 1 / 5;
-  grid-row: 1 / -1;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  width: 100vw; 
-}
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    width: 100vw; 
+  }
+
+  h2{
+    font-size: 2.0em;
+  }
+
+  header p, #criteria_text ol, #criteria_text p {
+    font-size: 1.75em;
+  }
 }
 
-/*Desktop View*/
+/*Desktop*/
 @media only screen and (min-width: 768px){
 
   h1, h2 {
@@ -253,8 +258,14 @@ body{
     padding-left: 10px;
   }
 
+  h2 {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 2em;
+  }
+
   header p{
-    font-size: 1.25em;
+    font-size: 1.5em;
     line-height: 1.5;
     padding: 20px 90px 0px 90px;
     text-align: left;
@@ -267,13 +278,44 @@ body{
     width: 100vw; 
   }
 
+  /*Landing page*/
+  #criteria_comic {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;;
+  }
+
+  img#comic {
+    border: 7px black solid;
+    width: 85%;
+  }
+
+  #criteria_text {
+    display: none;
+  }
+
+  /*Resources page*/
+  .container {
+    height: 100%;
+  }
+
+/*  .center {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}*/
+
   .film_strip_container {
     grid-column: 1 / 5;
     grid-row: 1 / -1;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-auto-rows: 1fr;
-    width: 100vw; 
+    grid-auto-rows: 100vh;
+    width: 100vw;
     margin-top: 5%;
+    margin-bottom: 5%;
   }
 
 } 

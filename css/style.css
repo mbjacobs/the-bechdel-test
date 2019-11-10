@@ -13,15 +13,19 @@ body{
   font-size: 1.0em;
   margin: 0;
   padding: 0;
+
+  background-image: url("../img/backgrounds/background-home4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*Source for making a background image "opaque": https://css-tricks.com/snippets/css/transparent-background-images/*/
-body::after {
+/*.container::after {
   content: "";
   background-image: url("../img/backgrounds/background-home4.jpg");
   background-size: cover;
-/*  background-repeat: no-repeat;
-*/  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
   opacity: 0.4;
   top: 0;
   left: 0;
@@ -29,11 +33,11 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;   
-}
+}*/
 
-.container {
+/*.container {
   height: 90%
-}
+}*/
  
 h1 {
   background-color: rgba(83, 26, 26, 1);
@@ -110,10 +114,10 @@ nav a:hover{
   top: 0;
 }
 
-:focus{
+/*:focus{
   border: 2px solid black;
   outline: none;
-}
+}*/
 
 header {
   padding-top: 10px;
@@ -154,9 +158,11 @@ footer{
   background-color: rgba(83, 26, 26, 1);
   color: white;
   margin-top: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
   width: 100vw;
 }
 

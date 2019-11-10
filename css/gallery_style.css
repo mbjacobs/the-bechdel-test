@@ -1,15 +1,5 @@
 /* Mariah Jacobs | SI 539 */
 
-/*body {
-	font-family: 'Palanquin Dark', sans-serif;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	margin-top: 0%;
-	margin-left: 0%;
-	margin-right: 0%;
-}*/
-
 p, h2, ol {
 	color: white;
 }
@@ -51,9 +41,6 @@ p, h2, ol {
 	display: inline-block;
 }
 
-.show {
-	display: none;
-}
 
 /*Responsive Design*/
 /*Tablet*/
@@ -104,6 +91,7 @@ p, h2, ol {
 		font-size: 1.25em;
 	}
 
+	/*Flip card reference for lines 107-145: https://www.w3schools.com/howto/howto_css_flip_card.asp */
 	.flip-card {
 	  background-color: transparent;
 	  width: 217px;

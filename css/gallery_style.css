@@ -1,6 +1,6 @@
 /* Mariah Jacobs | SI 539 */
 
-body {
+/*body {
 	font-family: 'Palanquin Dark', sans-serif;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -8,15 +8,7 @@ body {
 	margin-top: 0%;
 	margin-left: 0%;
 	margin-right: 0%;
-}
-
-.movies_background {
-	background-image: url("../img/backgrounds/background-movies.jpg");
-}
-
-.books_background {
-	background-image: url("../img/backgrounds/background-books.jpg");
-}
+}*/
 
 p, h2, ol {
 	color: white;

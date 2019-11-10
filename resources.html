@@ -6,39 +6,39 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
-		<link rel="stylesheet" type="text/css" href="css/resources_style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,500" rel="stylesheet">
 		<title>The Bechdel Test</title>
 	</head>
 
-	<body>
-		
-		<header>
-			<h1 id="site_name"><a href="index.html">THE BECHDEL TEST</a></h1>
+	<body class="resources_background">
+	    <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
-			<nav id="nav_header">
-				<ul>
-					<li><a href="index.html">About the Test</a></li>
-					<li><a href="movies.html">Bechdel Movies</a></li>
-					<li><a href="books.html">Bechdel Books</a></li>
-					<li class="selected_option"><a href="#">Resources</a></li>
-				</ul>
-			</nav>
-		</header> 
+	    <div class="container">
+	      <h1 id="site_name"><a href="index.html">THE BECHDEL TEST</a></h1>
+	      <nav>
+	        <ul>
+	          <li><a href="index.html">About the Test</a></li>
+	          <li><a href="movies.html">Movies</a></li>
+	          <li><a href="books.html">Books</a></li>
+	          <li class="selected"><a href="#">Resources</a></li>
+	        </ul>
+	      </nav>
 
-		<main>
-			<h2>Resources for change:</h2>
+	      <header id="main">
+			<h2 class="light_text">Resources for change:</h2>
+	      </header>
 
 			<div class="film_strip_container">
-				<div class="text_box1">
+				<div class="box">
 					<h3>FILMMAKERS AND PRODUCERS</h3>
 					<ul>
-						<li><a href="https://projects.fivethirtyeight.com/next-bechdel/"> FiveThirtyEight's 12 new ways of measuring Hollywood's gender imbalance</a></li>
-						<li><a href="https://nofilmschool.com/what-is-bechdel-test">No Film School article: What is the Bechdel Test and How Will It Help Your Writing?</a></li>
-						<li><a href="https://www.theverge.com/2017/12/22/16807424/alternatives-bechdel-test-bad-moms-lena-waithe">The Verge: We Can Do Better Than The Bechdel Test</a>
+						<li>Read <a href="https://projects.fivethirtyeight.com/next-bechdel/">FiveThirtyEight's 12 new ways of measuring Hollywood's gender imbalance</a></li>
+						<li>Read <a href="https://nofilmschool.com/what-is-bechdel-test">No Film School article: What is the Bechdel Test and How Will It Help Your Writing?</a></li>
+						<li>Read <a href="https://www.theverge.com/2017/12/22/16807424/alternatives-bechdel-test-bad-moms-lena-waithe">The Verge: We Can Do Better Than The Bechdel Test</a>
 					</ul>
 				</div>
-				<div class="text_box2">
+				<div class="box">
 					<h3>MOVIE-GOERS AND BOOK-READERS</h3>
 					<ul>
 						<li>Read <a href="http://poly-graph.co/bechdel/">Hollywood's Gender Divide and Its Effect on Films</a> and try the Bechdel Test Simulator at the end of the article</li>
@@ -46,7 +46,7 @@
 						<li><a href="https://www.listchallenges.com/classics-that-pass-the-bechdel-test">See how many classics you've read that pass the test!</a></li>
 					</ul>
 				</div>
-				<div class="text_box3">
+				<div class="box">
 					<h3>BOOK AUTHORS AND PUBLISHERS</h3>
 					<ul>
 						<li>Read <a href="https://bookriot.com/2014/12/17/women-fiction-bechdel-test/">Why Women in Fiction Need More Than the Bechdel Test</a></li>
@@ -54,9 +54,44 @@
 						<li>Follow Roxane Gay's <a href="https://slate.com/human-interest/2014/01/the-bechdel-test-needs-an-update-weve-set-the-bar-for-female-representation-too-low.html">Revised Six Part Bechdel Test</li>
 					</ul>
 				</div>
+				<div class="box">
+					<h3>SUGGESTIONS?</h3>
+					<!--Contact form-->
+					<form class="contact_form" method="post">
+					    <fieldset>
+					        <legend><h4>Contact us!</h4></legend>
+
+					        <div class="form-group">
+					            <div>
+					                <input id="name" name="name" type="text" placeholder="Name" class="form-control">
+					            </div>
+					        </div<
+
+					        <div class="form-group">
+				          		<div>
+					                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+					            </div>
+					        </div>
+
+					        <div class="form-group">
+					            <div>
+					                <textarea class="form-control" id="message" name="message" placeholder="Enter your suggestion here."></textarea>
+					            </div>
+					        </div>
+
+					        <div class="form-group">
+					            <div>
+					                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+					            </div>
+					        </div>
+					    </fieldset>
+					</form>
+				</div>
 			</div>
 		</main>
 
+	    <footer>
+	      <p>Mariah Jacobs (c) 2019</p>
+	    </footer>
 	</body>
-
 </html>

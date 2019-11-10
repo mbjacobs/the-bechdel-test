@@ -13,9 +13,21 @@ body{
   font-size: 1.0em;
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home_background {
@@ -194,7 +206,7 @@ header p{
 }
 
 .box li a:hover {
-  color: #D49D9D;
+  text-decoration: underline;
 }
 
 footer{
@@ -236,43 +248,33 @@ body{
 /*Desktop View*/
 @media only screen and (min-width: 768px){
 
-  .container{
-/*    display: grid;
-    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
-    grid-template-columns: 50px auto 500px auto 50px;*/
-  }
-
-  body: {
-    background: blue;
-  }
-
   h1, h2 {
     text-align: left;
     padding-left: 10px;
   }
 
   header p{
-  font-size: 1.25em;
-  line-height: 1.5;
-  padding: 20px 90px 0px 90px;
-  text-align: left;
-}
+    font-size: 1.25em;
+    line-height: 1.5;
+    padding: 20px 90px 0px 90px;
+    text-align: left;
+  }
 
   nav ul{
-  grid-column: 1 / 5;
-  grid-row: 1 / -1;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  width: 100vw; 
-}
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    width: 100vw; 
+  }
 
-.film_strip_container {
-  grid-column: 1 / 5;
-  grid-row: 1 / -1;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-auto-rows: 1fr;
-  width: 100vw; 
-  margin-top: 5%;
-}
+  .film_strip_container {
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-auto-rows: 1fr;
+    width: 100vw; 
+    margin-top: 5%;
+  }
 
 } 
 

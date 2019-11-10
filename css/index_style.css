@@ -20,8 +20,8 @@ body::after {
   content: "";
   background-image: url("../img/backgrounds/background-home4.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/*  background-repeat: no-repeat;
+*/  /*background-attachment: fixed;*/
   opacity: 0.4;
   top: 0;
   left: 0;
@@ -30,13 +30,17 @@ body::after {
   position: absolute;
   z-index: -1;   
 }
+
+.container {
+  height: 90%
+}
  
 h1 {
   background-color: rgba(83, 26, 26, 1);
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 2.0em;
+  font-size: 1.75em;
   text-align: center;
 }
 
@@ -115,17 +119,6 @@ header {
   padding-top: 10px;
 }
 
-footer{
-  background-color: rgba(83, 26, 26, 1);
-  color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  bottom: 0;
-  position: fixed;
-  width: 100vw;
-}
-
 header p{
   color: white;
   font-size: 1.25em;
@@ -157,6 +150,15 @@ header p{
 /*  -webkit-text-stroke: 0.05px white;
 */}
 
+footer{
+  background-color: rgba(83, 26, 26, 1);
+  color: white;
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100vw;
+}
 
 /*@media screen{
   img {

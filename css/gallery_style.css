@@ -58,7 +58,7 @@ p, h2, ol {
 /*Responsive Design*/
 /*Tablet*/
 @media only screen and (min-width:600px) and (max-width:767px) { 
-
+/*
   nav ul{
   grid-column: 1 / 5;
   grid-row: 1 / -1;
@@ -86,7 +86,7 @@ p, h2, ol {
     margin-left: 0;
     font-size: 1.25em;
     padding-top: 10px;
-}
+}*/
 }
 
 /*Desktop View*/
